@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/38c1368b3d.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="site.css">
+    <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="opacity-counter"></div>
+    <footer>
+        <div class ="container">
+            <div class ="container-social wow fadeIn"data-wow-offset="10">
+                <div class ="social">
+                    <a class="instagram" href="https://www.instagram.com/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a class="twitter" href="https://twitter.com/">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a class="github" href="https://github.com/copoke/Webbsida">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a class ="youtube" href="https://www.youtube.com/">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a class="tiktok" href="https://www.tiktok.com/">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<header>
+    <div class="main-header">
+        <div class="logo"></div>
+        <div class="flexbox-container">
+            <a id="invisible" class="header-link">Placeholder</a>
+            <a class="header-link" href="shopping.html">VAULT</a>
+            <a class="header-link"></a>
+        </div>
+    </div>
+</header>
+<div class="flexbox-container">
+    <span id="boxshadow">
+        <div class="background-sneaker">
+            <a href="https://www.nike.com/se/" class="text">Get now</a>
+            <div class="text">Nike Dunks
+                <div class="undertext text">Air force 2's with premium quality only avaible in small quantities</div>
+            </div>
+        </div>
+    </span>
+    <div class="container-sneaker">
+        <div class="background-sneaker2 wow fadeInDown">
+            <a href="https://www.nike.com/se/en/w/nike-by-you-shoes-6ealhzy7ok" class="wow bounceInLeft">Handmade Custom Dunks</a>
+        </div>
+    </div>
+    <div id="container-sneaker2" class="wow fadeInDown">
+        <div class="background-sneaker3">
+            <h2 class="wow fadeInDownBig fadeIn">Newer and better shoes</h2>
+        </div>
+    </div>
+</div>
+<script src="wow.js"></script>
+<script>
+    $(".tiktok").on({
+    mouseenter: function () {
+        $(".fa-tiktok").addClass("tiktok2");
+    },
+    mouseleave: function () {
+        $(".fa-tiktok").removeClass("tiktok2");
+    }
+});
+
+    $(document).bind("scroll", function() {
+
+    var max_scroll = $(window).scrollTop()
+    var screen_max = $(document).height() - $(window).height()
+    var screen_max2 = 400
+    var header = $("header")
+    var text = $(".text")
+    var stickout = $(".stickout-container")
+    var opacity = $(".opacity-counter")
+
+    text.css("opacity", 1 - (max_scroll /screen_max2))
+    opacity.css("opacity", 1 - max_scroll / screen_max)
+    var link2 = $("a.text")
+    if (text.css("opacity") < 0.2) {
+        link2.addClass("pointer-events")
+        header.css("opacity", 0.7)
+    } else {
+        link2.removeClass("pointer-events")
+        header.css("opacity", 1 - (max_scroll / screen_max))
+    }
+    });
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+  </script>
+</script>
+</body>
+</html>

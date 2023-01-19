@@ -1,0 +1,312 @@
+:root {
+    --color1: #212529;
+    --text-color: #e07a5f
+}
+@font-face {
+    font-family: caghendemoregular;
+    src: url(caghen_demo-webfont.woff2), url(caghen_demo-webfont.woff)
+}
+@font-face {
+    font-family: Elegantos;
+    src: url(Creepster-Regular.tff)
+}
+@media only screen and (max-width:1000px) {
+    .background-sneaker {
+        background-position-x: -240px
+    }
+    .logo .header-link {
+        margin-right: 30px
+    }
+    .background-sneaker2 {
+        background-position-x: 0
+    }
+    .background-sneaker3 {
+        height: 300%
+    }
+}
+@media only screen and (max-width:800px) {
+    .background-sneaker2 {
+        background-position-x: -200px
+    }
+}
+@media only screen and (max-width:700px) {
+    .background-sneaker3 {
+        background-position-x: -200px
+    }
+}
+@media screen and (max-width:600px) {
+    .background-sneaker {
+        background-position-x: -400px
+    }
+    .logo .header-link {
+        margin-right: 25px
+    }
+    .background-sneaker2 {
+        background-position-x: -400px
+    }
+    .flexbox-container .background-sneaker2 a {
+        color: #00f4fc !important;
+        filter: drop-shadow(black 5px 5px 5px)
+    }
+    .background-sneaker3 {
+        background-position-x: -200px
+    }
+}
+@media only screen and (max-width:500px) {
+    .logo .header-link {
+        margin-right: 20px
+    }
+}
+@media only screen and (max-width:400px) {
+    .logo .header-link {
+        margin-right: 10px
+    }
+    .background-sneaker3 {
+        background-position-x: -500px
+    }
+}
+@media only screen and (max-width:300px) {
+    .logo .header-link {
+        margin-right: 9px
+    }
+    .background-sneaker3 {
+        background-position-x: -400px
+    }
+}
+body {
+    display: flex;
+    height: 500px;
+    max-width: 100%;
+    margin: 0;
+    background-color: #212529;
+    background-size: contain
+}
+footer {
+    position: absolute;
+    background-size: cover;
+    background-position-y: 400px;
+    height: fit-content;
+    width: 100%;
+    margin-top: auto;
+    bottom: -2000px;
+    font-family: Elegantos;
+    font-weight: 100;
+    border-top: 5px;
+    background: linear-gradient(20deg, rgba(32, 32, 32, 1) 0, rgba(28, 28, 28, 1) 100%);
+    box-shadow: 5px 10px 40px 30px #1c1c1c, 5px -10px 40px 30px #1c1c1c
+}
+footer .container-social {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--text-color);
+    transition: all ease .5s;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: .9;
+    transition: all 0, 5s;
+    justify-content: space-around
+}
+footer .container-social:hover {
+    opacity: .9
+}
+.container-social .social a {
+    display: inline-block;
+    text-align: center;
+    margin-left: 40px;
+    font-size: 70px;
+    line-height: 95px;
+    height: 90px;
+    width: 90px;
+    background-color: rgba(255, 255, 255, .192);
+    border-radius: 50%;
+    color: #fff;
+    transition: all .5s ease
+}
+.container-social .social a.youtube:hover {
+    color: red;
+    background-color: #fff;
+    box-shadow: 2px 2px rgba(0, 0, 0, .164)
+}
+.container-social .social a.twitter:hover {
+    color: #00a6ff;
+    background: #fff;
+    box-shadow: 2px 2px rgba(0, 0, 0, .164)
+}
+.container-social .social a.instagram:hover {
+    background: #fff;
+    color: #f0d;
+    box-shadow: 2px 2px rgba(0, 0, 0, .164);
+    animation: infinite 5s rotera
+}
+.container-social .social a.github:hover {
+    background: #fff;
+    color: #212529;
+    box-shadow: 2px 2px rgba(0, 0, 0, .164)
+}
+.container-social .social a.tiktok:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .15)
+}
+.tiktok2 {
+    filter: drop-shadow(2px 2px 0 #f62424) brightness(110%) drop-shadow(-2px -2px 0 #24f6f0) brightness(110%);
+    animation: forwards 1s tiktok
+}
+@keyframes tiktok {
+    0% {
+        filter: drop-shadow(2px 2px 0 #f624241b) brightness(110%) drop-shadow(-2px -2px 0 #24f6ef2f) brightness(70%)
+    }
+    100% {
+        filter: drop-shadow(2px 2px 0 #f62424) brightness(110%) drop-shadow(-2px -2px 0 #24f6f0) brightness(110%)
+    }
+}
+.header-link {
+    text-decoration: none;
+    font-weight: 700;
+    width: 150px;
+    box-shadow: inset 0 0 0 0 var(--text-color);
+    color: var(--text-color);
+    filter: drop-shadow(-1px 1px 4px rgba(0, 0, 0, .705));
+    transition: all .35s ease-in-out;
+    margin-left: 20px
+}
+.header-link:hover {
+    box-shadow: inset 135px 0 0 0 var(--text-color);
+    color: var(--color1)
+}
+.pointer-events {
+    pointer-events: none
+}
+header {
+    z-index: 3
+}
+header .main-header {
+    background: linear-gradient(357deg, rgba(35, 30, 37, 1) 0, rgba(60, 56, 63, 1) 100%);
+    box-shadow: 0 5px 10px 5px #000;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    display: flex;
+    flex-wrap: row;
+    flex-flow: row
+}
+header .main-header .logo {
+    background-image: url(https://i.ibb.co/P9mr8Yh/My-project-1.png);
+    height: 80px;
+    width: 81px;
+    background-size: cover;
+    margin-bottom: 6px;
+    margin-left: 6px;
+    display: flex;
+    filter: drop-shadow(-4px 4px 5px rgba(0, 0, 0, .377));
+    align-items: center
+}
+header .main-header a {
+    color: var(--text-color);
+    font-size: 40px;
+    margin-bottom: -25px
+}
+header .main-header a#invisible {
+    opacity: 0
+}
+.flexbox-container {
+    display: flex;
+    height: 400%;
+    width: 100%;
+    flex-direction: column
+}
+.container-sneaker {
+    height: 100%;
+    width: 100%;
+    margin-top: 200px
+}
+.background-sneaker2 {
+    display: flex;
+    background-image: url(https://i.ibb.co/PxW6f3Q/shoeextender2.png);
+    background-size: cover;
+    z-index: 1;
+    width: 100%;
+    height: 100%
+}
+.flexbox-container .background-sneaker2 a {
+    align-self: center;
+    font-family: monospace;
+    margin-bottom: 200px;
+    margin-left: 20px;
+    color: #fff;
+    font-size: 40px;
+    width: 100px;
+    font-weight: 100;
+    text-decoration: underline
+}
+#container-sneaker2 {
+    height: 600px;
+    width: 100%
+}
+.background-sneaker3 {
+    display: flex;
+    background-image: url(https://i.ibb.co/bm3HzvV/foot-dipping.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    width: 100%;
+    font-family: monospace;
+    font-size: 35px;
+    height: 220%
+}
+.background-sneaker3 h2 {
+    margin-top: 12rem;
+    margin-left: 2rem
+}
+.background-sneaker {
+    display: flex;
+    font-family: monospace;
+    background-image: url(https://www.ldnfashion.com/wp-content/uploads/2022/05/nike-5126389_1280.jpeg);
+    background-size: cover;
+    z-index: 5;
+    height: 140%
+}
+.background-sneaker a {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    color: #fff;
+    font-size: 25px;
+    width: 100px;
+    font-weight: 100;
+    text-decoration: underline
+}
+.background-sneaker a:hover {
+    opacity: 1
+}
+.background-sneaker div {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    color: #fff;
+    font-size: 40px;
+    width: 250px;
+    font-weight: 100
+}
+.background-sneaker div .undertext {
+    position: absolute;
+    margin-top: 20px;
+    left: 0;
+    font-size: 20px;
+    font-weight: 50;
+    opacity: .85
+}
+#boxshadow {
+    height: 100%;
+    z-index: 2;
+    width: 100%;
+    filter: drop-shadow(0 -5px 5px rgb(0, 0, 0)) drop-shadow(0 5px 5px rgb(0, 0, 0))
+}
+@media screen and (max-width:1600px) {
+    .footer {
+        bottom: -1800px
+    }
+}

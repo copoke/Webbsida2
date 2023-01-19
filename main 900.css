@@ -1,0 +1,357 @@
+:root {
+    --color1: #212529;
+    --text-color: #e07a5f;
+}
+
+@font-face {
+    font-family: caghendemoregular;
+    src: url(caghen_demo-webfont.woff2),
+         url(caghen_demo-webfont.woff);
+
+}
+
+@font-face {
+    font-family: Elegantos;
+    src: url(Creepster-Regular.tff)
+}
+
+@media (max-width:980px ) {
+    .sneaker-stickout {
+        background-image: url();
+    }
+}
+
+body {
+    display:flex;
+    height:500px;
+    max-width: 100%;
+    margin:0;
+    background-color:#212529;
+    background-size: contain;
+}
+footer {
+    position: absolute;
+    background-size: cover;
+    background-position-y: 400px;
+    height: 60vh;
+    width: 100%;
+    margin-top:auto;
+    bottom:-2150px;
+    font-family: Elegantos;
+    font-weight: 100;
+    border-top: 5px;
+    background: linear-gradient(20deg, rgba(32,32,32,1) 0%, rgba(28,28,28,1) 100%);
+    box-shadow: 5px 10px 40px 30px #1c1c1c, 5px -10px 40px 30px #1c1c1c;
+}
+
+footer .container {
+    display: flex;
+    width:100%;
+    height:200px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer .container2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height:60%;
+    width:150px;
+    margin-left: 10px;
+    background-color: red;
+}
+
+footer .container-social {
+    margin-top:50px;
+    width:20%;
+    justify-content: space-around;
+    height:50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--text-color);
+    transition: all ease 0.5s;
+    border-radius: 20px;
+    opacity: 0.9;
+    position: absolute;
+    bottom:25px;
+    transition: all 0,5s
+}
+
+footer .container-social:hover {
+    opacity: 0.9;
+}
+
+.container .row {
+    display: flex;
+    flex-wrap: wrap;
+    background-size: auto;
+    background-size: cover;
+    height:35%;
+    width:100%;
+    justify-content: space-around;
+}
+
+footer .container .row2 .column {
+    height:70%;
+    width:25%;
+    color:#fefae0;
+    margin-left: 50px;
+    margin-top: 5px;
+    opacity:0.6;
+    transition: all 0.6s ease;
+}
+
+footer .container .row2 .column:hover {
+    opacity:1
+}
+
+
+
+footer .container .row2 .column:hover {
+    opacity: 1; 
+}
+
+footer .container .row2 {
+    display: flex;
+    height:100%;
+    width:100%;
+    justify-content: space-around;
+}
+
+.container-social .social a{
+	display: inline-block;
+    text-align: center;
+    margin-left: 6px;
+    margin-top: 5px;
+    font-size: 30px;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255, 255, 255, 0.192);
+	line-height: 43px;
+	border-radius: 50%;
+	color: #ffffff;
+    filter: hue-rotate(0turn);
+	transition: all 0.5s ease;
+}
+
+
+.container-social .social a.youtube:hover{
+	color: #ff0000;
+	background-color: #ffffff;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.164);
+}
+
+.container-social .social a.twitter:hover{
+    color:rgb(0, 166, 255);
+    background: white;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.164);
+}
+
+.container-social .social a.instagram:hover{
+    background:white;
+    color:rgb(255, 0, 221);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.164);
+}
+
+.container-social .social a.github:hover {
+    background:white;
+    color:#212529;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.164);
+}
+
+.container-social .social a.tiktok:hover {
+    background:white;
+    color:black;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+
+.tiktok2 {
+    filter: drop-shadow(2px 2px 0 #f62424) brightness(110%)
+            drop-shadow(-2px -2px 0 #24f6f0) brightness(110%);
+}
+
+footer .title {
+    text-align: center;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 35px;
+    justify-content: space-around;
+    margin-top: 30px;
+    border-bottom: 2px solid;
+    margin-bottom: 500px;
+    line-height: 40px;
+    border-radius: 5px;
+    border-color: #000000;
+}
+
+footer .container2 article {
+    display: inline-block;
+}
+
+.header-link {
+    text-decoration: none;
+    font-weight:700;
+    box-shadow: inset 0 0 0 0 var(--text-color);
+    color: var(--text-color);
+    margin: 0 -.30rem;
+    padding: 0 .30rem;
+    filter:drop-shadow(-1px 1px 4px rgba(0, 0, 0, 0.705));
+    transition: all 0.35s ease-in-out;
+}
+
+.header-link:hover{
+    box-shadow: inset 100px 0 0 0 var(--text-color);
+    color:var(--color1)
+}
+
+.pointer-events {
+    pointer-events: none;
+}
+
+header {
+    z-index: 3;
+}
+
+header .main-header {
+    background: linear-gradient(357deg, rgba(35,30,37,1) 0%, rgba(60,56,63,1) 100%);
+    width:100%;
+    height:15%;
+    position:fixed;
+    display:absolute;
+    top:0px;
+}
+
+header .main-header .logo{
+    background-image: url(https://i.ibb.co/P9mr8Yh/My-project-1.png);
+    height:80px;
+    width:80px;
+    background-size: cover;
+    margin-bottom: 6px;
+    margin-left:6px;
+    display: flex;
+    filter:drop-shadow(-4px 4px 5px rgba(0, 0, 0, 0.377) );
+    align-items: center;
+}
+
+header .main-header a {
+    color:var(--text-color);
+    margin-right: 27px;
+}
+
+header .main-header a#invisible {
+    opacity:0;
+}
+
+.container-sneaker {
+    position: absolute;
+    top:700px;
+    height:120%;
+    width:100%;
+}
+
+.background-sneaker2{
+    display: flex;
+    background-image: url(https://images4.alphacoders.com/108/1085299.jpg);
+    background-size: cover;
+    z-index: 0;
+    width:100%;
+    height:100%;
+    clip-path: polygon(100% 26%, 100% 100%, 0 91%, 0 19%);
+}
+
+.background-sneaker2 a {
+    position: absolute;
+    top:40%;
+    left:5%;
+    color:rgb(255, 255, 255);
+    font-size:40px;
+    width:100px;
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+.sneakeranimation {
+    animation: forwards 1 1s opacity-change;
+    animation-iteration-count: 1;
+}
+
+@keyframes opacity-change {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.container-sneaker2 {
+    position: absolute;
+    top:1250px;
+    height:120%;
+    width:100%;
+}
+
+.background-sneaker3{
+    display: flex;
+    background-image: url(https://wallpaperaccess.com/full/1232169.jpg);
+    background-size: cover;
+    z-index: 1;
+    width:100%;
+    height:100%;
+    margin-top: 200px;
+    background-position-y: 30px;
+    background-repeat: no-repeat;
+}
+
+.background-sneaker{
+    display: flex;
+    background-image: url(https://www.ldnfashion.com/wp-content/uploads/2022/05/nike-5126389_1280.jpeg  );
+    background-size: contain;
+    z-index: 0;
+    height:100%;
+    clip-path: polygon(100% 0, 100% 74%, 0 74%, 0 0);
+}
+
+.background-sneaker a {
+    position: absolute;
+    top:60%;
+    left:5%;
+    color:rgb(255, 255, 255);
+    font-size:25px;
+    width: 90px;
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+.background-sneaker a:hover {
+    opacity: 1;
+}
+
+.background-sneaker div {
+    position: absolute;
+    top:40%;
+    left:5%;
+    color:rgb(255, 255, 255);
+    font-size:40px;
+    width:200px;
+    font-weight: 100;
+}
+
+.background-sneaker div .undertext {
+    position: absolute;
+    margin-top:20px;
+    left:0px;
+    font-size: 20px;
+    font-weight: 50;
+    opacity: 0.85;
+}
+
+#boxshadow {
+    height:900px;
+    width:100%;
+    filter: drop-shadow(0px -5px 5px rgb(0, 0, 0))
+            drop-shadow(0px 5px 5px rgb(0, 0, 0));
+}
